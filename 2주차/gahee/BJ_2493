@@ -1,0 +1,36 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
+
+
+class BJ_2493{
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine());
+        String[] s = br.readLine().split(" ");
+        int[] tops = new int[t];
+        Stack<Integer> stack = new Stack<>() ;
+        int[] result = new int[t];
+        for(int i=t-1; i>=0; i--){
+            tops[i] = Integer.parseInt(s[i]);
+
+            if(stack.isEmpty()) {
+                stack.push(i);
+                continue;
+            }
+
+            if(tops[stack.peek()] < tops[i]) {
+                while(!stack.isEmpty() && tops[stack.peek()] < tops[i]) {
+                    int index = stack.pop();
+                    result[index] = i+1;
+                }
+            }
+            stack.push(i);
+        }
+        for(int i=0; i<t; i++) {
+            System.out.print(result[i] + " ");
+        }
+    }
+}
