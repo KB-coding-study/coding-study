@@ -151,7 +151,7 @@
 # 0️⃣ 진행 방식
 - 목표: 매일 1문제 이상 풀기
 - 매주 알고리즘 주제를 정해 [바킹독의 실전 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)에서 해당 알고리즘의 ✔ 표시 된 문제 풀이
-- 매일 아침 9시까지 코드 push 후 PR
+- 매일 아침 9시까지 코드 **본인 브랜치에 push** 후 **main에 본인 브랜치 PR**
 - 다음날 오전 12시까지 다른 팀원의 코드리뷰 후 merge 진행
 
 # 1️⃣ 소스코드 파일 이름 규칙
