@@ -17,9 +17,7 @@ public class no2164 {
 
         while (q.size() > 1) {
             q.remove();
-            if(q.size() > 1) {
-                q.offer(q.poll());
-            }
+            q.offer(q.poll());
         }
         System.out.println(q.poll());
     }
