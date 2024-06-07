@@ -245,5 +245,13 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>2493</td><td><a href="https://www.acmicpc.net/problem/2493">탑</a></td><td>골드5</td>
         <td>응용 문제✔</td>
     </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>18258</td><td><a href="https://www.acmicpc.net/problem/18258">큐 2</a></td><td>실버4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2164</td><td><a href="https://www.acmicpc.net/problem/2164">카드 2</a></td><td>실버4</td>
+        <td>기본 문제✔</td>
+    </tr>
 </table>
 
