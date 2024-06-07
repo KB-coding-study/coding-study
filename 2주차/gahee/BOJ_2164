@@ -21,6 +21,5 @@ public class BOJ_2164 {
             que.offer(que.poll());
         }
         System.out.println(que.poll());
-
     }
 }
