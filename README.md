@@ -174,10 +174,20 @@ git commit -m "[N]주차-[이름]-[문제번호]"
 ```
 
 # 3️⃣ PR 규칙
-
-- PR 제목: [이름]: 날짜
-- `[김땡땡]: 6월 4일 `
-- comment는 자유
+## PR 제목
+- N주차-이름-날짜
+- `2주차-홍길동-0507 `
+## comment 양식
+> N주차 PR
+> ---
+> 당일 커밋 후 올린 문제 pr에서 체크
+> + [x] 월요일
+> + [ ] 화요일
+> + [ ] 수요일
+> + [ ] 목요일
+> + [ ] 금요일
+> + [ ] 토요일
+- 이외 comment는 자유
 - 해결 못한 문제가 있다면 어디서 막혔는지 작성하기 ⇒ 코드리뷰할때 같이 해결
 
 # 4️⃣ (option) 코드리뷰 규칙
@@ -233,7 +243,7 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     </tr>
     <!-- 2주차 문제 -->
     <tr style="text-align: center">
-        <td rowspan="6">2주차<br>스택, 큐, 덱</td>
+        <td rowspan="7">2주차<br>스택, 큐, 덱</td>
         <td>BOJ</td><td>10773</td><td><a href="https://www.acmicpc.net/problem/10773">제로</a></td><td>실버4</td>
         <td>기본 문제✔</td>
     </tr>
@@ -252,6 +262,14 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     <tr style="text-align: center">
         <td>BOJ</td><td>2164</td><td><a href="https://www.acmicpc.net/problem/2164">카드 2</a></td><td>실버4</td>
         <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1021</td><td><a href="https://www.acmicpc.net/problem/1021">회전하는 큐</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+  <tr style="text-align: center">
+        <td>BOJ</td><td>5430</td><td><a href="https://www.acmicpc.net/problem/5430">AC</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
     </tr>
 </table>
 
