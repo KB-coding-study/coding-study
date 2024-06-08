@@ -1,0 +1,58 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Deque;
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class BJ_75011942 {
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        LinkedList<Integer> que = new LinkedList<>();
+        int N, count;
+
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        N = Integer.parseInt(st.nextToken());
+        count = Integer.parseInt(st.nextToken());
+
+        int result = 0;
+        int[] numbers = new int[count];
+        st = new StringTokenizer(br.readLine(), " ");
+        for (int i = 0; i < count; i++) {
+            numbers[i] = Integer.parseInt(st.nextToken());
+        }
+
+        for (int i = 1; i <= N; i++) {
+            que.offer(i);
+        }
+
+        for (int i : numbers) {
+            if(que.peek()==i) {
+                que.poll();
+                continue;
+            }
+            if ((que.size() - que.indexOf(i) - 1 < que.indexOf(i))) {
+                    while (que.peek() != i) {
+                        que.offerFirst(que.pollLast());
+                        result += 1;
+                    }
+            } else if((que.size() - que.indexOf(i) - 1 > que.indexOf(i))) {
+                    while (que.peek() != i) {
+                        que.offerLast(que.pollFirst());
+                        result += 1;
+                    }
+            }else {
+                while (que.peek() != i) {
+                    que.offerLast(que.pollFirst());
+                    result += 1;
+                }
+            }
+            que.poll();
+        }
+        System.out.println(result);
+    }
+}
+
