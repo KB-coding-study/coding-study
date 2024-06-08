@@ -19,7 +19,7 @@ public class BOJ_5430 {
             String arr = br.readLine();
             deque = new ArrayDeque<>();
 
-            // 배열의 길이가 0이상이면, 후처리 진행
+            // 배열의 길이가 1이상일 때 후처리 진행
             if (n > 0) {
                 String[] tmpArr = arr.substring(1, arr.length() - 1).split(",");
                 for (String s : tmpArr) {
