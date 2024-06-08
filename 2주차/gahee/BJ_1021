@@ -6,7 +6,7 @@ import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class BJ_75011942 {
+public class BJ_1021 {
 
     public static void main(String[] args) throws IOException {
 
