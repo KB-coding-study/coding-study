@@ -267,9 +267,43 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>1021</td><td><a href="https://www.acmicpc.net/problem/1021">회전하는 큐</a></td><td>실버3</td>
         <td>기본 문제✔</td>
     </tr>
-  <tr style="text-align: center">
+    <tr style="text-align: center">
         <td>BOJ</td><td>5430</td><td><a href="https://www.acmicpc.net/problem/5430">AC</a></td><td>골드5</td>
         <td>응용 문제✔</td>
+    </tr>
+<!-- 3주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="8">3주차<br>정렬, BFS(기본) </td>
+        <td>BOJ</td><td>5648</td><td><a href="https://www.acmicpc.net/problem/5648">역원소 정렬</a></td><td>실버5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1181</td><td><a href="https://www.acmicpc.net/problem/1181">단어 정렬</a></td><td>실버5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2910</td><td><a href="https://www.acmicpc.net/problem/2910">빈도 정렬</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1012</td><td><a href="https://www.acmicpc.net/problem/1012">유기농 배추</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10026</td><td><a href="https://www.acmicpc.net/problem/10026">적록색약</a></td><td>골드5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>7569</td><td><a href="https://www.acmicpc.net/problem/7569">토마토</a></td><td>골드5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>7562</td><td><a href="https://www.acmicpc.net/problem/7562">나이트의 이동</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>5427</td><td><a href="https://www.acmicpc.net/problem/5427">불</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
     </tr>
 </table>
 
