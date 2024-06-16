@@ -1,0 +1,73 @@
+import java.util.*;
+
+public class no7562 {
+    static int testNum, lengthOfBoard;
+    static int[] knight, destination;
+    static int[][] board, visited;
+    static int[] answer;
+    static int[] dx = {-2, -2, -1, -1, 1, 1, 2, 2};
+    static int[] dy = {1, -1, 2, -2, 2, -2, 1, -1};
+    static Queue<Node324> q;
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        testNum = sc.nextInt();
+        answer = new int[testNum];
+
+        for (int i = 0 ; i < testNum ; i++) {
+            q = new LinkedList<>();
+
+            lengthOfBoard = sc.nextInt();
+            board = new int[lengthOfBoard][lengthOfBoard];
+            visited = new int[lengthOfBoard][lengthOfBoard];
+
+            knight = new int[2];
+            destination = new int[2];
+            knight[0] = sc.nextInt();
+            knight[1] = sc.nextInt();
+            destination[0] = sc.nextInt();
+            destination[1] = sc.nextInt();
+
+            board[knight[0]][knight[1]] = 1;
+            q.add(new Node324(knight[0], knight[1]));
+            board[destination[0]][destination[1]] = -1;
+
+            answer[i] = bfs();
+        }
+        Arrays.stream(answer).forEach(num -> System.out.println(num-1));
+    }
+
+    public static int bfs() {
+        while (!q.isEmpty()) {
+            Node324 node = q.poll();
+            int Y = node.y;
+            int X = node.x;
+
+            for (int i = 0 ; i < 8 ; i++) {
+                if (Y+dy[i]>=0 && Y+dy[i]<lengthOfBoard && X+dx[i]>=0 && X+dx[i]<lengthOfBoard) {
+                    if(board[Y+dy[i]][X+dx[i]]==-1) {
+                        return board[Y][X]+1;
+                    }
+                    if(board[Y+dy[i]][X+dx[i]]==0) {
+                        board[Y+dy[i]][X+dx[i]] = board[Y][X]+1;
+                        q.add(new Node324(Y+dy[i],X+dx[i]));
+                    }
+                }
+            }
+        }
+        return 1;
+    }
+
+}
+
+
+class Node324{
+    int y;
+    int x;
+
+    public Node324(int y, int x) {
+        this.y = y;
+        this.x = x;
+    }
+}
