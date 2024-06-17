@@ -305,5 +305,31 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>5427</td><td><a href="https://www.acmicpc.net/problem/5427">불</a></td><td>골드4</td>
         <td>기본 문제✔</td>
     </tr>
+<!-- 4주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="6">4주차<br>BFS(심화) </td>
+        <td>BOJ</td><td>2206</td><td><a href="https://www.acmicpc.net/problem/2206">벽 부수고 이동하기</a></td><td>골드3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>9466</td><td><a href="https://www.acmicpc.net/problem/9466">텀프로젝트</a></td><td>골드3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2573</td><td><a href="https://www.acmicpc.net/problem/2573">빙산</a></td><td>골드4</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2146</td><td><a href="https://www.acmicpc.net/problem/2146">다리 만들기</a></td><td>골드3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13549</td><td><a href="https://www.acmicpc.net/problem/13549">숨바꼭질 3</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1600</td><td><a href="https://www.acmicpc.net/problem/1600">말이 되고픈 원숭이</a></td><td>골드3</td>
+        <td>응용 문제✔</td>
+    </tr>
 </table>
 
