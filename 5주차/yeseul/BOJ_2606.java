@@ -17,6 +17,7 @@ public class BOJ_2606 {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int x = Integer.parseInt(st.nextToken());
             int y = Integer.parseInt(st.nextToken());
+
             // 인접행렬 사용
             link[x][y] = 1;
             link[y][x] = 1;
