@@ -331,5 +331,31 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>1600</td><td><a href="https://www.acmicpc.net/problem/1600">말이 되고픈 원숭이</a></td><td>골드3</td>
         <td>응용 문제✔</td>
     </tr>
+<!-- 5주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="6">5주차<br>DFS(기본, 심화) </td>
+        <td>BOJ</td><td>2606</td><td><a href="https://www.acmicpc.net/problem/2606">바이러스</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11724</td><td><a href="https://www.acmicpc.net/problem/11724">연결 요소의 개수</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2644</td><td><a href="https://www.acmicpc.net/problem/2644">촌수계산</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13023</td><td><a href="https://www.acmicpc.net/problem/13023">ABCDE</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2668</td><td><a href="https://www.acmicpc.net/problem/2668">숫자고르기</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1967</td><td><a href="https://www.acmicpc.net/problem/1967">트리의 지름</a></td><td>골드4</td>
+        <td>응용 문제✔</td>
+    </tr>
 </table>
 
