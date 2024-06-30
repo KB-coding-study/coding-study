@@ -10,7 +10,7 @@ public class BOJ1967 {
         int n = Integer.parseInt(br.readLine());
 
         for (int i = 0; i <= n; i++) {
-            tree.add(new ArrayList<>());
+
         }
 }
 }
