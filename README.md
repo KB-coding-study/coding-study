@@ -357,7 +357,7 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>1967</td><td><a href="https://www.acmicpc.net/problem/1967">트리의 지름</a></td><td>골드4</td>
         <td>응용 문제✔</td>
     </tr>
-<!-- 5주차 문제 -->
+<!-- 6주차 문제 -->
     <tr style="text-align: center">
         <td rowspan="6">6주차<br>투 포인터 </td>
         <td>BOJ</td><td>1644</td><td><a href="https://www.acmicpc.net/problem/1644">소수의 연속합</a></td><td>골드3</td>
@@ -382,6 +382,52 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     <tr style="text-align: center">
         <td>BOJ</td><td>20922</td><td><a href="https://www.acmicpc.net/problem/20922">겹치는 건 싫어</a></td><td>실버1</td>
         <td>응용 문제✔</td>
+    </tr>
+<!-- 7주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="11">7주차<br>다이나믹 프로그래밍</td>
+        <td>BOJ</td><td>1003</td><td><a href="https://www.acmicpc.net/problem/1003">피보나치 함수</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1932</td><td><a href="https://www.acmicpc.net/problem/1932">정수 삼각형</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11727</td><td><a href="https://www.acmicpc.net/problem/11727">2×n 타일링 2</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2193</td><td><a href="https://www.acmicpc.net/problem/2193">이친수</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1912</td><td><a href="https://www.acmicpc.net/problem/1912">연속합</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11055</td><td><a href="https://www.acmicpc.net/problem/11055">가장 큰 증가하는 부분 수열</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11053</td><td><a href="https://www.acmicpc.net/problem/11053">가장 긴 증가하는 부분 수열</a></td><td>실버2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>9461</td><td><a href="https://www.acmicpc.net/problem/9461">파도반 수열</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14501</td><td><a href="https://www.acmicpc.net/problem/14501">퇴사</a></td><td>실버3</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>15486</td><td><a href="https://www.acmicpc.net/problem/15486">퇴사2</a></td><td>골드5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10844</td><td><a href="https://www.acmicpc.net/problem/10844">쉬운 계단 수</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
     </tr>
 </table>
 
