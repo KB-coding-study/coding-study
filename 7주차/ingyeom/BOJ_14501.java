@@ -14,12 +14,9 @@ public class Main {
         }
 
         int[] dp = new int[n + 1];
-        for (int i = 0; i <= n; i++) {
-            for(int j = i - 1; j >= 0; j--) {
-                dp[i] = Math.max(dp[i], dp[j]);
-                if (j + arr[j][0] <= i) {
-                    dp[i] = Math.max(dp[i], dp[j] + arr[j][1]);
-                }
+        for (int i = 0; i < n; i++) {
+            for (int j = i + arr[i][0]; j <= n; j++) {
+                dp[j] = Math.max(dp[j], dp[i] + arr[i][1]);
             }
         }
 
