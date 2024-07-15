@@ -385,7 +385,7 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     </tr>
 <!-- 7주차 문제 -->
     <tr style="text-align: center">
-        <td rowspan="11">7주차<br>다이나믹 프로그래밍</td>
+        <td rowspan="11">7주차<br>다이나믹 프로그래밍<br>(기본)</td>
         <td>BOJ</td><td>1003</td><td><a href="https://www.acmicpc.net/problem/1003">피보나치 함수</a></td><td>실버3</td>
         <td>기본 문제✔</td>
     </tr>
@@ -428,6 +428,36 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     <tr style="text-align: center">
         <td>BOJ</td><td>10844</td><td><a href="https://www.acmicpc.net/problem/10844">쉬운 계단 수</a></td><td>실버1</td>
         <td>기본 문제✔</td>
+    </tr>
+<!-- 8주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="7">8주차<br>다이나믹 프로그래밍<br>(심화)</td>
+        <td>BOJ</td><td>9251</td><td><a href="https://www.acmicpc.net/problem/9251">LCS</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1699</td><td><a href="https://www.acmicpc.net/problem/1699">제곱수의 합</a></td><td>실버2</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>9084</td><td><a href="https://www.acmicpc.net/problem/9084">동전</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1915</td><td><a href="https://www.acmicpc.net/problem/1915">가장 큰 정사각형</a></td><td>골드4</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10942</td><td><a href="https://www.acmicpc.net/problem/10942">팰린드롬?</a></td><td>골드4</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>9655</td><td><a href="https://www.acmicpc.net/problem/9655">돌 게임</a></td><td>실버5</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2011</td><td><a href="https://www.acmicpc.net/problem/2011">암호코드</a></td><td>골드5</td>
+        <td>응용 문제✔</td>
     </tr>
 </table>
 
