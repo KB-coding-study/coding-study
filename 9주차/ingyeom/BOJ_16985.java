@@ -2,128 +2,115 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static int[][][] maze = new int[5][5][5], mazeCopy = new int[5][5][5];
-    static int arr[] = new int[5], floor[] = new int[5];
-    static boolean check[] = new boolean[5];
-    static int result = Integer.MAX_VALUE;
-    static int[][][] count;
+    static int[][][] cube = new int[7][7][7], cube2 = new int[7][7][7];
+    static int[] order = new int[7];
+    static boolean[] v = new boolean[7];
+    static int[][] d = {{-1, 0, 0}, {1, 0, 0}, {0, 1, 0}, {0, -1, 0}, {0, 0, -1}, {0, 0, 1}};
+    static int result = 125;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        for(int i = 0; i < 5; i++) {
-            for(int j = 0; j < 5; j++) {
+
+        for (int k = 1; k <= 5; k++) {
+            for (int i = 1; i <= 5; i++) {
                 StringTokenizer st = new StringTokenizer(br.readLine());
-                for(int l = 0; l < 5; l++) {
-                    maze[i][j][l] = Integer.parseInt(st.nextToken());
+                for (int j = 1; j <= 5; j++) {
+                    cube[k][i][j] = Integer.parseInt(st.nextToken());
                 }
             }
         }
 
-        floorCheck(0);
-        System.out.println((result == Integer.MAX_VALUE) ? -1 : result);
+        // 큐브 판 순서 정하기
+            // 각 판마다 회전
+                // bfs
+        setOrder(1);
+        System.out.println(result == 125 ? -1 : result);
     }
 
-    static void floorCheck(int k) {
-        if(k == 5){
-            backTracking(0);
+    // 큐브 판 순서 정하기
+    public static void setOrder(int index) {
+        if (index == 6) {
+            // 순서에 맞게 큐브 재설계
+            for(int k = 1; k <= 5; k++) {
+                for (int i = 1; i <= 5; i++) {
+                    for(int j = 1; j <= 5; j++) {
+                        cube2[k][i][j] = cube[order[k]][i][j];
+                    }
+                }
+            }
+
+            // 각 판마다 회전
+            spin(1);
             return;
         }
 
-        for(int i = 0; i < 5; i++) {
-            if(!check[i]) {
-                check[i] = true;
-                floor[k] = i;
-                floorCheck(k + 1);
-                check[i] = false;
+        for (int i = 1; i <= 5; i++) {
+            if (!v[i]) {
+                v[i] = true;
+                order[index] = i;
+                setOrder(index + 1);
+                v[i] = false;
             }
         }
     }
 
-    static void backTracking(int k) {
-        if(k == 5) {
-            for(int i = 0; i < 5; i++) {
-                rotation();
-            }
-
-            if(mazeCopy[0][0][0] == 1 && mazeCopy[4][4][4] == 1) {
+    public static void spin(int index) {
+        if (index == 6) {
+            // bfs
+            if(cube2[1][1][1] == 1)
                 bfs();
-
-                if(count[4][4][4] != 0) {
-                    result = Math.min(result, count[4][4][4]);
-                    if(result == 12) { // 최단거리 출력
-                        System.out.println(12);
-                        System.exit(0);
-                    }
-                }
-
-            }
             return;
         }
 
-        for(int i = 1; i < 5; i++) {
-            arr[k] = i;
-            backTracking(k + 1);
-        }
-    }
-
-    static void rotation() {
-        for(int i = 0; i < 5; i++) {
-            int idx = floor[i];
-            int rotationNum = arr[i];
-            for(int j = 0; j < 5; j++) {
-                for(int l = 0; l < 5; l++) {
-                    if(rotationNum == 1) {
-                        mazeCopy[idx][j][l] = maze[i][j][l];
-                    }
-                    if(rotationNum == 2) {
-                        mazeCopy[idx][l][4 - j] = maze[i][j][l];
-                    }
-                    if(rotationNum == 3) {
-                        mazeCopy[idx][4 - j][4 - l] = maze[i][j][l];
-                    }
-                    if(rotationNum == 4) {
-                        mazeCopy[idx][4 - l][j] = maze[i][j][l];
-                    }
+        for(int k = 0; k < 4; k++) {
+            int[][] temp = new int[7][7];
+            for (int i = 1; i <= 5; i++) {
+                for(int j = 1; j <= 5; j++) {
+                    temp[j][5 - i + 1] = cube2[index][i][j];
                 }
             }
-        }
 
-    }
-
-    static void bfs() {
-        int[][] dist = {{-1, 0, 0}, {1, 0, 0}, {0, 0, -1}, {0, 0, 1}, {0, 1, 0}, {0, -1, 0}};
-        Queue<Pair> queue = new LinkedList<>();
-        boolean[][][] visit = new boolean[5][5][5];
-        count = new int[5][5][5];
-        visit[0][0][0] = true;
-        queue.add(new Pair(0, 0, 0));
-        while (!queue.isEmpty()) {
-            Pair cur = queue.poll();
-            for(int i = 0; i < 6; i++) {
-                int nz = cur.z + dist[i][0];
-                int nx = cur.x + dist[i][1];
-                int ny = cur.y + dist[i][2];
-                if(nz < 0 || nz >= 5 || nx < 0 || nx >= 5 || ny < 0 || ny >= 5) continue;
-                if(visit[nz][nx][ny] || mazeCopy[nz][nx][ny] != 1) continue;
-                count[nz][nx][ny] = count[cur.z][cur.x][cur.y] + 1;
-                if(nz == 4 && nx == 4 && ny == 4) {
-                    return;
-                }
-                visit[nz][nx][ny] = true;
-                queue.add(new Pair(nz, nx, ny));
+            for (int i = 1; i <= 5; i++) {
+                cube2[index][i] = Arrays.copyOf(temp[i], 7);
             }
+
+            spin(index + 1);
         }
     }
 
-    public static class Pair {
-        int x;
-        int y;
-        int z;
+    public static void bfs() {
+        Queue<int[]> q = new LinkedList<>();
+        boolean[][][] v2 = new boolean[7][7][7];
+        q.add(new int[] { 1, 1, 1, 0 });
+        v2[1][1][1] = true;
 
-        public Pair( int z, int x, int y) {
-            this.x = x;
-            this.y = y;
-            this.z = z;
+        while(!q.isEmpty()) {
+            int[] now = q.poll();
+            int x = now[0];
+            int y = now[1];
+            int z = now[2];
+            int c = now[3];
+
+            if(c >= result)
+                return;
+
+            if(x == 5 && y == 5 && z == 5){
+                result = Math.min(result, c);
+                return;
+            }
+
+            for(int i = 0; i < d.length; i++) {
+                int nx = x + d[i][0];
+                int ny = y + d[i][1];
+                int nz = z + d[i][2];
+                int nc = c + 1;
+
+                if(v2[nx][ny][nz] || cube2[nx][ny][nz] == 0)
+                    continue;
+
+                v2[nx][ny][nz] = true;
+                q.add(new int[] { nx, ny, nz, nc });
+            }
         }
     }
 }
