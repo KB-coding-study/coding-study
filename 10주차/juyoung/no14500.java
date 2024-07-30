@@ -93,6 +93,3 @@ public class no14500 {
 	
  
 }
- 
-[출처] [백준]14500번, 테트로미노|작성자 wellcoding
-
