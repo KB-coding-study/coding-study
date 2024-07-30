@@ -459,5 +459,57 @@ git commit -m "[N]주차-[이름]-[문제번호]"
         <td>BOJ</td><td>2011</td><td><a href="https://www.acmicpc.net/problem/2011">암호코드</a></td><td>골드5</td>
         <td>응용 문제✔</td>
     </tr>
+<!-- 9주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="6">9주차<br>시뮬레이션</td>
+        <td>BOJ</td><td>11559</td><td><a href="https://www.acmicpc.net/problem/11559">Puyo Puyo</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14891</td><td><a href="https://www.acmicpc.net/problem/14891">톱니바퀴</a></td><td>골드5</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14499</td><td><a href="https://www.acmicpc.net/problem/14499">주사위 굴리기</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13335</td><td><a href="https://www.acmicpc.net/problem/13335">트럭</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>16985</td><td><a href="https://www.acmicpc.net/problem/16985">Maaaaaaaaaze</a></td><td>골드2</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14503</td><td><a href="https://www.acmicpc.net/problem/14503">로봇 청소기</a></td><td>골드5</td>
+        <td>기본 문제✔</td>
+    </tr>
+<!-- 10주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="6">10주차<br>시뮬레이션</td>
+        <td>BOJ</td><td>3190</td><td><a href="https://www.acmicpc.net/problem/3190">뱀</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14500</td><td><a href="https://www.acmicpc.net/problem/14500">테트로미노</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13460</td><td><a href="https://www.acmicpc.net/problem/13460">구슬 탈출 2</a></td><td>골드1</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14502</td><td><a href="https://www.acmicpc.net/problem/14502">연구소</a></td><td>골드4</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14888</td><td><a href="https://www.acmicpc.net/problem/14888">연산자 끼워넣기</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>14889</td><td><a href="https://www.acmicpc.net/problem/14889">스타트와 링크</a></td><td>실버1</td>
+        <td>기본 문제✔</td>
+    </tr>
 </table>
 
