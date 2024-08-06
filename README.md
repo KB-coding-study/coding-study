@@ -161,6 +161,7 @@
 - 문제출처 작성 통일
     - BOJ - 백준
     - PGS - 프로그래머스
+    - LTC - 리트코드
 
 [//]: # (    - SEA - 삼성 SW Expert Acadamy)
     
@@ -510,6 +511,36 @@ git commit -m "[N]주차-[이름]-[문제번호]"
     <tr style="text-align: center">
         <td>BOJ</td><td>14889</td><td><a href="https://www.acmicpc.net/problem/14889">스타트와 링크</a></td><td>실버1</td>
         <td>기본 문제✔</td>
+    </tr>
+<!-- 11주차 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="7">11주차<br>시뮬레이션</td>
+        <td>BOJ</td><td>17142</td><td><a href="https://www.acmicpc.net/problem/17142">연구소 3</a></td><td>골드3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13459</td><td><a href="https://www.acmicpc.net/problem/13459">구슬 탈출</a></td><td>골드1</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>19238</td><td><a href="https://www.acmicpc.net/problem/19238">스타트 택시</a></td><td>골드2</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>PGS</td><td>2020 KAKAO</td><td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60063">블록 이동하기</a></td><td>Lv.3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>PGS</td><td>2022 KAKAO</td><td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/92343">양과 늑대</a></td><td>Lv.3</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>LTC</td><td>37</td><td><a href="https://leetcode.com/problems/sudoku-solver/description/">Sudoku Solver</a></td><td>Hard</td>
+        <td>응용 문제✔</td>
+    </tr>
+    <tr style="text-align: center">
+        <td>LTC</td><td>51</td><td><a href="https://leetcode.com/problems/n-queens/description/">n-queens</a></td><td>Hard</td>
+        <td>응용 문제✔</td>
     </tr>
 </table>
 
